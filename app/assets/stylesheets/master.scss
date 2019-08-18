@@ -1,1 +1,43 @@
 @import "bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+
+.navbar-light .navbar-brand  {
+  font-family: 'Monoton', cursive;
+  font-size: 35px;
+}
+
+body {
+  color: black;
+  background-color: #fff8d9;
+}
+
+
+.navbar {
+    position: relative;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 45%;
+    margin-left: -50px !important;
+    display: block;
+}
+
+.hero {
+  background: image_url('hero.jpg') no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+
+}
+
+.frosty {
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
