@@ -1,6 +1,9 @@
 @import "bootstrap";
+@import "font-awesome";
+
 
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 
 .navbar-light .navbar-brand  {
@@ -26,18 +29,74 @@ body {
     display: block;
 }
 
+.nav-link {
+  color: black
+}
+
 .hero {
   background: image_url('hero.jpg') no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
+  height: 320px;
 
 }
 
 .frosty {
   background: rgba(0,0,0,0.5);
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36,32,33,0.9);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  padding: 10px 0px;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: white;
+}
+
+
+.main {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.hero-title{
+  font-family: 'Indie Flower', cursive;
+}
+
+
+.content-head {
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  padding-left: 20px;
+  padding-right: 20px;  
+
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  color: black;
+  padding: 30px;
+}
