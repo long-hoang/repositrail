@@ -23,16 +23,23 @@
           <br/>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-<!------
-              <li class="nav-item">
-                <a class="nav-link" href="#">Coming Soon</a>
-              </li>
------->
+
+
+               <%= link_to 'Browse', trails_path, class: 'nav-item ' %>
+
+
             </ul>
 
           </div>
         </nav>
 
+        <% if notice.present? %>
+          <p class="alert alert-info"><%= notice %></p>
+        <% end %>
+        <% if alert.present? %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+       
         <%= yield %>
 
 
@@ -45,8 +52,16 @@
           <div class = "col-12 col-sm-3">
             <b><u>Links</u></b>
             <br/>
+            <%= link_to 'Home', root_path %>
+            <br/>
+
             <%= link_to 'About Us', about_path %>
             <br/>
+
+            <%= link_to 'Browse', trails_path %>
+            <br/>
+
+
 
           </div>
             <div class = "col-12 col-sm-3">
