@@ -9,14 +9,21 @@
   <br />
   <br/>
 
-<div class="booyah-box alt-booyah col-10 offset-1">
-  <% @trails.each do |trail| %>
-    <h2> <%= trail.name %> </h2>
-    <h3> <%= trail.duration %> </h3>
-    <h3> <%= trail.address %> </h3> 
 
+  <% @trails.each do |trail| %>
+    <div class="booyah-box alt-booyah col-10 offset-1">
+    <h2> <%= link_to trail.name, trail_path(trail) %> </h2><br/>
+    <h4> Duration: <%= trail.duration %> </h4>
+    <h4> <%= trail.address %> </h4> 
+
+    <% if trail.user.present? %>
+      <small>Posted By:</small>
+      <small><%= trail.user.email %></small>
+    <% end %>
+    </div>  
+    <br/>
   <% end %>
-</div>  
+
 <br/>
 <br/>
 </div>

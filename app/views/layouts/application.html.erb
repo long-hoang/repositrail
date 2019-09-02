@@ -22,12 +22,25 @@
           <br/>
           <br/>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            
             <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-
-
                <%= link_to 'Browse', trails_path, class: 'nav-item ' %>
+            </ul>
 
+            <ul class = "navbar-nav">
+              <% if user_signed_in? %>
+                <li class = "nav-item">
+                  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'navbar-link' %>
+                </li>
+              <% else %>
+                <li class = "nav-item">
+                  <%= link_to 'Sign In', new_user_session_path, class: 'navbar-link' %>
+                </li>
 
+                <li class="nav-item">
+                  <%= link_to 'Register', new_user_registration_path, class: 'navbar-link' %>
+                </li>                
+              <% end %>
             </ul>
 
           </div>
