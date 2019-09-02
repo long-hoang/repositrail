@@ -22,6 +22,7 @@ class TrailsController < ApplicationController
 
   def show
     @trail = Trail.find(params[:id])
+    @comment = Comment.new
   end
 
   def destroy

@@ -50,7 +50,9 @@ body {
   padding-bottom: 10px;
 }
 
-
+.clear {
+  clear: both;
+}
 
 #footer {
   position: relative;
@@ -115,4 +117,9 @@ body {
 
 .alt-booyah {
   background: orange;
+}
+
+ #map {
+  height: 300px;
+
 }

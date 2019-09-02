@@ -35,6 +35,10 @@ gem 'simple_form'
 
 gem 'devise'
 
+gem 'geocoder'
+
+gem 'figaro'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
